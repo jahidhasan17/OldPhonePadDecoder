@@ -30,6 +30,16 @@ public class Keyboard
         return commands[key];
     }
 
+    public void SetCommand(char key, ICommand command)
+    {
+        if (commands.ContainsKey(key))
+        {
+            throw new InvalidOperationException("This button already occupied.");
+        }
+        
+        commands.Add(key, command);
+    }
+
     /// <summary>
     /// Initializing all the command against the key of the keyboard.
     /// </summary>
