@@ -1,6 +1,6 @@
 # Some Assumptions
 - We assume that the letter will always be displayed as uppercase.
-- The input will not contain `0` or any symbols apart from `1 to 9`, `*` `#`. If they exist, an exception will be thrown.
+- The input will not contain `0` or any symbols apart from `1 to 9`, `*`, `#`, `' '`. If they exist, an exception will be thrown.
 
 # Algorithm
 - We divided the typing letters into two buffers: the ongoing typing letters buffer and the previous typing letters buffer.
