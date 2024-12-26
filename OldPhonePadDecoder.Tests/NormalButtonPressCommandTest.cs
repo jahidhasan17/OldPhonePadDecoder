@@ -21,9 +21,6 @@ public class NormalButtonPressCommandTest
 
     [TestCase("22333", "All character should be same")]
     [TestCase("55 55", "All character should be same.")]
-    /*[TestCase("****", "NormalButtonPressCommand only support Key from 1 to 9")]
-    [TestCase("####", "NormalButtonPressCommand only support Key from 1 to 9")]
-    [TestCase("000", "NormalButtonPressCommand only support Key from 1 to 9")]*/
     public void Execute_InValidInput_ShouldThrowException(string input, string message)
     {
         var command = GetSut(input.Last());
