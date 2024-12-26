@@ -58,6 +58,13 @@ private void HandleBackspaceButton(char buttonKey)
 {
     var command = Keyboard.GetCommand(buttonKey);
     
+    /*
+     * We need to check from where we remove the letter.
+     * Case - 1: If we already on the typing some letter and at the same we type backspace(*), in that case
+               we need to remove the letter from the current typing result (ResultOfOngoingTypedKeys).
+     * Case - 2: If we currently don't type anything and we type backspace(*), in that case we need to remove
+               the letter from the previous typing result (PreviousResult).
+     */
     if (!string.IsNullOrEmpty(ResultOfOngoingTypedKeys))
     {
         command.Execute(OngoingTypedKeys, ref ResultOfOngoingTypedKeys);
@@ -73,6 +80,10 @@ private void HandleBackspaceButton(char buttonKey)
 
 private void HandleButtonThatAddLetterInDisplay(char buttonKey)
 {
+    /*
+     * If current key is the same as previous typing key without any pause, then we can update the display without resetting the ongoing typing.
+     * If the current is not the same as previous typing letter/key, first we need to save and reset the previous typing, then we need to update the current type key.
+     */
     if (string.IsNullOrEmpty(OngoingTypedKeys) || buttonKey == OngoingTypedKeys.Last())
     {
         UpdateOngoingTypedKeys(buttonKey);
