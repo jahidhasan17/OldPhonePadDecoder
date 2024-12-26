@@ -32,6 +32,7 @@ public class Decoder
         if (buttonKey == '*')
         {
             HandleBackspaceButton(buttonKey);
+            return;
         }
 
         if (buttonKey == ' ')

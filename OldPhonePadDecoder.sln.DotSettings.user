@@ -3,5 +3,10 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.OldPhonePadTypingTests.OldPhonePad_ValidInput_ShouldCorrectDecodedValue&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.OldPhonePadTypingTests.OldPhonePad_InValidInput_ShouldThrowError&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.NormalButtonPressCommandTest.Execute_ValidInput_ShouldCorrectDecodedValue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.NormalButtonPressCommandTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.KeyboardTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.BackspaceButtonPressCommandTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::BA2CE184-3129-4E64-BA98-104FBE4BEDCC::net8.0::OldPhonePadDecoder.Tests.OldPhonePadTypingTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

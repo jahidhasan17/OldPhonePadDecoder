@@ -91,5 +91,7 @@ public class Keyboard
         }));
         
         commands.Add('*', new BackspaceButtonPressCommand(new BackspaceButton()));
+        
+        commands.Add('#', new SendButtonPressCommand(new SendButton()));
     }
 }
