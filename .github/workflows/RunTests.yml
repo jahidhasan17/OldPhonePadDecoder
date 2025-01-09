@@ -25,4 +25,4 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run Unit Tests
-        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=
+        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=TestResults.trx"
