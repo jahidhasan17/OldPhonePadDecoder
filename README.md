@@ -15,8 +15,7 @@
     - If the current letter is not the same as the previous one, we save the current state, reset it, and update the ongoing typing with the current key.
   - If the letter is #, we do nothing.
 
-The following code shows the main part of the algorithm - 
-
+The following code shows the main part of the algorithm -
 
 ```C#
 public static string OldPhonePad(string input)
