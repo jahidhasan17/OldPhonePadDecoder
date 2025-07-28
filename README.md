@@ -17,7 +17,6 @@
 
 The following code shows the main part of the algorithm - 
 
-
 ```C#
 public static string OldPhonePad(string input)
 {
