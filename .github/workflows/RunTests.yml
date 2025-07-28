@@ -2,7 +2,7 @@ name: PR Unit Test Verification
 
 on:
   push:
-    branches: main
+    branches: ["main"]
 
 jobs:
   verify-unit-tests:
