@@ -1,7 +1,8 @@
 name: PR Unit Test Verification
 
 on:
-  push
+  push:
+    branches: main
 
 jobs:
   verify-unit-tests:
