@@ -19,7 +19,7 @@ public class KeyboardTest
         var keyboard = new Keyboard();
 
         var command = keyboard.GetCommand(c);
-        
+
         Assert.That(command, Is.TypeOf<NormalButtonPressCommand>());
     }
     
