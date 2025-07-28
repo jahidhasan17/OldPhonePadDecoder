@@ -1,9 +1,7 @@
 name: PR Unit Test Verification
 
 on:
-  pull_request:
-    branches:
-      - main
+  push
 
 jobs:
   verify-unit-tests:
@@ -11,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
@@ -25,4 +23,4 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run Unit Tests
-        run: dotnet test --no-build --configuration Release --logger
+        run: dotnet test --no-build --configuration Release --logger "console" 
